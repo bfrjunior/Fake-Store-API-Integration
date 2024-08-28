@@ -1,5 +1,5 @@
 fake-api:
-  url:'https://fakestoreapi.com'
+  url: https://fakestoreapi.com
 
 spring:
   cloud:
@@ -7,4 +7,4 @@ spring:
       ribbon:
         enabled: true
 server:
-  port:8181
+  port:8080
