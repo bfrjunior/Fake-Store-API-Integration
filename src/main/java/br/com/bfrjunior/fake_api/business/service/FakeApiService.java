@@ -1,4 +1,4 @@
-package br.com.bfrjunior.fake_api.business;
+package br.com.bfrjunior.fake_api.business.service;
 
 import br.com.bfrjunior.fake_api.apiv1.dto.ProductsDTO;
 import br.com.bfrjunior.fake_api.infrastructure.FakeApiClient;
@@ -14,6 +14,8 @@ public class FakeApiService {
     private final FakeApiClient cliente;
 
     public List<ProductsDTO> buscaProdutos() {
-        return cliente.buscaListaProdutos();
+        List<ProductsDTO> dto = cliente.buscaListaProdutos();
+
+
     }
 }

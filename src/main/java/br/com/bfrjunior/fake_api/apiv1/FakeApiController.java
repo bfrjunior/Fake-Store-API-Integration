@@ -1,7 +1,7 @@
 package br.com.bfrjunior.fake_api.apiv1;
 
 import br.com.bfrjunior.fake_api.apiv1.dto.ProductsDTO;
-import br.com.bfrjunior.fake_api.business.FakeApiService;
+import br.com.bfrjunior.fake_api.business.service.FakeApiService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
