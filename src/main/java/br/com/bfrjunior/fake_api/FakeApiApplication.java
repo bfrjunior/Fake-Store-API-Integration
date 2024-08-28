@@ -1,14 +1,14 @@
-package br.com.bfrjunior.fake_api.infrastructure.client;
+package br.com.bfrjunior.fake_api;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-
 @SpringBootApplication
 @EnableFeignClients
-public class FakeApiUsApplication {
+public class FakeApiApplication {
+
+
 
     public static void main(String[] args) {
-        SpringApplication.run(FakeApiUsApplication.class, args);
+        SpringApplication.run(FakeApiApplication.class, args);
     }
-
 }

@@ -1,9 +1,8 @@
-package br.com.bfrjunior.fake_api.infrastructure;
+package br.com.bfrjunior.fake_api.infrastructure.client;
 
 import br.com.bfrjunior.fake_api.apiv1.dto.ProductsDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
-
 
 import java.util.List;
 
