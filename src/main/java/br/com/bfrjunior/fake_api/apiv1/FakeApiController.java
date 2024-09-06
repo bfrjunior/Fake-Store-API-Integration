@@ -9,9 +9,12 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -19,6 +22,7 @@ import java.util.List;
 @RequestMapping("/produtos")
 @RequiredArgsConstructor
 @Tag(name = "fake-api")
+@Slf4j
 public class FakeApiController {
 
     private final FakeApiService service;
@@ -30,9 +34,10 @@ public class FakeApiController {
             @ApiResponse(responseCode = "500", description = "Erro ao salvar os produtos"),
     })
     @PostMapping("/api")
+    //@Scheduled(fixedDelay = 1000*60)
     public ResponseEntity<List<ProductsDTO>> salvaProdutosApi(){
-
         return ResponseEntity.ok(service.buscaProdutos());
+
     }
 
 
